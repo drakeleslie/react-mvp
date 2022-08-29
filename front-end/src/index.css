@@ -1,0 +1,40 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+#hd {
+  display: grid;
+  height: 100px;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-areas: "bn choice lg";
+  margin-top: 50px;
+}
+.banner {
+  grid-area: bn;
+}
+.bnInfo {
+  margin-left: 33%;
+  margin-top: 8;
+  font-size: 75px;
+}
+.pageSelection {
+  grid-area: choice;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.pageChoice {
+}
+.logInDiv {
+  grid-area: lg;
+}
+.inputLogIn {
+  margin-left: 12.5%;
+  margin-top: 12.5%;
+}
+.currentUserDiv {
+  margin-left: 33%;
+  margin-top: 12.5%;
+  font-size: 33px;
+}
