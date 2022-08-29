@@ -48,6 +48,10 @@ function App() {
         }
       });
   };
+
+  //post lift to journal
+  //const sendLift = (list) => {};
+
   if (!list || !journal) return <h1></h1>;
   return (
     <>
@@ -57,8 +61,8 @@ function App() {
         currentUser={currentUser}
       />
       <div className="mainPage">
-        <Exercises list={list} />
-        <Journal journal={journal} />
+        <Exercises list={list} currentUser={currentUser} />
+        <Journal journal={journal} currentUser={currentUser} />
       </div>
     </>
   );

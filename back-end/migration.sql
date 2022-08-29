@@ -60,5 +60,5 @@ INSERT INTO users (name) VALUES ('Bob');
 
 
 INSERT INTO journal (username, name, sets, reps, info, logId) VALUES ('Drake', 'Leg Curl', '3', '16', 'failure', 'legs#1');
-INSERT INTO journal (username, name, sets, reps, info, logId) VALUES ('Bob', 'Leg Curl', '3', '16', 'failure', 'legs#2');
+INSERT INTO journal (username, name, sets, reps, info, logId) VALUES ('Bob', 'Leg Curl', '3', '16', 'failure', 'legs#3');
 
