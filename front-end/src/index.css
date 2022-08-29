@@ -24,8 +24,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.pageChoice {
-}
+
 .logInDiv {
   grid-area: lg;
 }
@@ -37,4 +36,44 @@ html {
   margin-left: 33%;
   margin-top: 12.5%;
   font-size: 33px;
+}
+
+.listContainer {
+  background-color: black;
+  justify-content: center;
+  height: 100px;
+  width: 50%;
+}
+.mainPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "lifts journal";
+}
+.lifts {
+  grid-area: lifts;
+}
+.journal {
+  grid-area: journal;
+}
+.boxName {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 500px;
+  height: 120px;
+  border: 5px solid #969696;
+  background: #d9dbda;
+  margin: 10px;
+  margin-left: 30%;
+}
+.logBox {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 500px;
+  height: 120px;
+  border: 5px solid #969696;
+  background: #d9dbda;
+  margin: 10px;
+  margin-left: 17%;
 }

@@ -49,15 +49,16 @@ INSERT INTO exercises (name, prime_movers, secondaries, video) VALUES ('Below-th
 
 INSERT INTO exercises (name, prime_movers, secondaries, video) VALUES ('Leg Extension', 'Vastus Medialis(quads)', 'Rectus Femoris(hips), Vastus Lateralis(quads), and Vastus Intermedius(quads)', 'https://www.youtube.com/watch?v=yiEDToHWs2E&ab_channel=mountaindog1');
 INSERT INTO exercises (name, prime_movers, secondaries, video) VALUES ('Leg Curl', 'Bicep Femoris(hamstrings)', 'Semitendinosus(hamstrings), and Semimembranosus(hamstrings)', 'https://www.youtube.com/watch?v=jobEeklwrrs&ab_channel=RenaissancePeriodization');
-INSERT INTO exercises (name, prime_movers, secondaries. video) VALUES ('High-Bar Squat', 'Quads', 'Hamstrings, and Glutes', 'https://www.youtube.com/watch?v=dW5-C1fsMjk&ab_channel=OmarIsuf');
+INSERT INTO exercises (name, prime_movers, secondaries, video) VALUES ('High-Bar Squat', 'Quads', 'Hamstrings, and Glutes', 'https://www.youtube.com/watch?v=dW5-C1fsMjk&ab_channel=OmarIsuf');
 INSERT INTO exercises (name, prime_movers, secondaries, video) VALUES ('Romanian Deadlift', 'Hamstrings', 'Glutes and Erector Spinae(posterior chain)', 'https://www.youtube.com/watch?v=Ka6GhzIfh-c&t=854s&ab_channel=RenaissancePeriodization');
-INSERT INTO exercises (name, prime_movers, secondaries. video) VALUES ('Hip Thrust', 'Glutes', 'Hamstrings, Core, Quads', 'https://www.youtube.com/watch?v=xDmFkJxPzeM&ab_channel=JeffNippard');
+INSERT INTO exercises (name, prime_movers, secondaries, video) VALUES ('Hip Thrust', 'Glutes', 'Hamstrings, Core, Quads', 'https://www.youtube.com/watch?v=xDmFkJxPzeM&ab_channel=JeffNippard');
 
 
 INSERT INTO users (name) VALUES ('Drake');
-
+INSERT INTO users (name) VALUES ('Bob');
 
 
 
 INSERT INTO journal (username, name, sets, reps, info, logId) VALUES ('Drake', 'Leg Curl', '3', '16', 'failure', 'legs#1');
+INSERT INTO journal (username, name, sets, reps, info, logId) VALUES ('Bob', 'Leg Curl', '3', '16', 'failure', 'legs#2');
 

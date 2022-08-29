@@ -7,20 +7,22 @@ dotenv.config();
 const app = express();
 //const port = process.env.PORT;
 const port = process.env.PORT || 8000;
+
+const dbConfig = {
+  connectionString: process.env.DATABASE_URL,
+};
+
+if (process.env.NODE_ENV === "production") {
+  dbConfig.ssl = {
+    rejectUnauthorized: false,
+  };
+}
+
+const pool = new pg.Pool(dbConfig);
+
 app.use(express.json());
 app.use(express.static("front-end"));
 app.use(cors());
-
-const pool = new pg.Pool({
-  connectionString: process.env.DATABASE_URL,
-  ...(process.env.NODE_ENV === "production"
-    ? {
-        ssl: {
-          rejectUnauthorized: false,
-        },
-      }
-    : {}),
-});
 
 //GET REQUESTS //////////////////////////////////////////////////////////////////////
 //all exercises
@@ -42,6 +44,11 @@ app.get("/fj/:user/:log", (req, res) => {
     .then((data) => {
       res.send(data.rows);
     });
+});
+app.get("/fj/journal", (req, res) => {
+  pool.query(`SELECT * FROM journal`).then((data) => {
+    res.send(data.rows);
+  });
 });
 
 //show all user
